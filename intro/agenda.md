@@ -1,5 +1,12 @@
 !SLIDE bullets
 
+# Questions
+
+* Have you tried the DPK?
+* Are you actively using the DPK?
+
+!SLIDE bullets
+
 # Agenda
 
 1. DPK Overview

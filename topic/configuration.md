@@ -4,7 +4,7 @@
 
 !SLIDE bullets
 
-# Hiera, Facter and Configuraiton
+# DPK Configuration
 
 To understand configuration in the DPK, you need to know two tools:
 
@@ -18,7 +18,7 @@ To understand configuration in the DPK, you need to know two tools:
 Hiera is a key/value lookup tool for Puppet.
 
 * Store configuration outside of code
-* Store configuration in plain text files (YAML/JSON)
+* Store configuration in plain text files (`YAML` or `JSON`)
 * Uses a "defaults, with overrides" pattern
 
 !SLIDE bullets
