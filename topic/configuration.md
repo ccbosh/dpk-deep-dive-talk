@@ -1,7 +1,6 @@
 !SLIDE center subsection blue
 
-# Hiera, Facter 
-# and Configuration
+# DPK Configuration
 
 !SLIDE bullets
 
@@ -90,13 +89,13 @@ There are 6 main sections in the DPK configuration:
 1. `component_preboot_setup_list`
 1. `component_postboot_setup_list`
 
-!SLIDE bullets
+!SLIDE center subsection grey
 
-# DPK Configuration Tour
-
-Let's look at a `psft_configuration.yaml` file to see the options.
+# Demo
 
 ~~~SECTION:notes~~~
+Let's look at a `psft_configuration.yaml` file to see the options.
+
 Let's also talk about a few undocumented configuration options.
 
 1. `config_settings:` and WLST for PIA domains (shown in `psft_customizations.yaml`)
