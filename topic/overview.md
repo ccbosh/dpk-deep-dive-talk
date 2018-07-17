@@ -4,6 +4,17 @@
 
 !SLIDE bullets
 
+# Deployment Packages
+
+* Delivered automation for building environments
+* Define your environments upfront
+* Implementation is abstracted
+* Consistent and repeatable infrastructure
+* Configuration is documented: `psft_customizations.yaml`
+* Extend to customize your builds
+
+!SLIDE bullets
+
 # DPK Background
 
 "Deployment Packages" is a term that encompasses:
