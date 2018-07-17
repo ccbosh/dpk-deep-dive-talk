@@ -16,6 +16,17 @@ This is the best part of the DPK! It's a great tool out of the box, but we can m
 
 !SLIDE bullets
 
+# Custom DPK Roles
+
+* Include your configuration in DPK builds
+* Extend `psft_customizations.yaml`
+* Deploy your own changes to environments
+* Signon page
+* SSL Certificates
+* Custom Java Libraries
+
+!SLIDE bullets
+
 # Learning Puppet
 
 1. Puppet thinks in state, not procedures
@@ -54,36 +65,13 @@ Puppet resources follow the same style. The `type`, followed the by `title` of t
 Depending on the `type`, different attribute are required/available to configure an item. In the example, we are declaring a `healthcheck.html`. It is located under `/opt/www` and contains the string `active`. If the file doesn't exist, Puppet will create it with that content. If the file exists, but the content doesn't match, Puppet will update the file to contain only the string `active`.
 ~~~ENDSECTION~~~
 
-!SLIDE bullets
-
-# Puppet Variables
-
-1. Variable are immutable (no changes)
-1. Variables are assigned when the catalog is built
-1. Syntax: `$variable`
-1. Variables can be interpolated: `"${variable}.psadmin.cloud"`
-
-!SLIDE bullets
-
-# Puppet Loops
-
-1. For Each is used by the DPK
-1. Loops through keys in a hash
-
-        @@@puppet
-        $var.each |$key, $value| {
-          file { "${key}.html":
-          path    => '/opt/www/',
-          ensure  => present,
-          content => "${value[subkey]}", 
-        }
-
 !SLIDE center subsection grey
 
 # Demo
 
 ~~~SECTION:guide~~~
 1. Build a manifest to deploy a Health Check file
+1. Update the signon image 
 
 > *Estimated Time: 30 min*
 
