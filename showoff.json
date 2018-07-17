@@ -13,6 +13,8 @@
     "intro/about.md",
     "intro/agenda.md",
     "topic/overview.md",
+    "topic/bootstrapping.md",
+    "topic/configuration.md",
     "intro/closing.md"
   ]
 }
