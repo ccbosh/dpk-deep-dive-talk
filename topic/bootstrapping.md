@@ -12,17 +12,15 @@
 
 # What is Bootstrapping?
 
+The DPK bootstrap process:
+
 1. Extract downloaded .zip files
 1. Install Puppet
 1. Get configuration information
 1. Deploys DPK archives
 1. Configure server DPK Role
-1. Deploy middleware software
-1. Deploy PeopleTools/application homes
-1. Create web/app/batch domains
-1. Run pre-boot ACM
-1. Start domains
-1. Run post-boot ACM
+
+At this point, Puppet will configure the server.
 
 ~~~SECTION:notes~~~
 Bootstrapping can be done on a fresh server, or on an existing server. If you want to upgrade PeopleTools, you might run the bootstrap scripts from the newer PeopleTools DPK.
@@ -65,26 +63,3 @@ One role is missing: `piaapp`. We will show how to create that role later on. Th
 ~~~SECTION:notes~~~
 These options will determine how the bootstrap script functions. Do you want to deploy the new `PS_HOME` files, or `PS_APP_HOME` files, or just deploy the DPK archives but not run Puppet? These options don't affect the DPK Role.
 ~~~ENDSECTION~~~
-
-!SLIDE bullets
-
-# Bootstrap Process
-
-The `psft-dpk-setup` script will:
-
-1. Installing Puppet, Hiera eYAML and copy the DPK modules
-1. Extracting any downloaded .zip files
-1. Extracting DPK archives into `c:\psft\dpk\archives`
-1. Ask you questions, populate YAML files with the answers, and set the DPK Role
-
-
-!SLIDE bullets
-
-# Bootstrap Details
-
-`--env_type midtier`
-
-1. Application DPK (PI) gives you `pt_app_*` DPK Roles
-1. PeopleTools DPK gives you `pt_tools_*` DPK Roles
-
-PeopleSoft Image builds use `fulltier` and result in `pt_<app>_pum` DPK Roles
