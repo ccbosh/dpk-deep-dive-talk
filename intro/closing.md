@@ -1,5 +1,13 @@
 !SLIDE bullets
 
+# Questions
+
+* What challenges does the DPK present for you?
+* What has been the hardest part of using the DPK?
+* Have you received pushback for using the DPK?
+
+!SLIDE bullets
+
 # More Resources
 
 * psadmin.io/reconnect
