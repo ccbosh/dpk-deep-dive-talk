@@ -4,6 +4,6 @@
 
 1. DPK Overview
 1. Bootstrapping
-1. Hiera, Facter and Configuration
+1. DPK Configuration
 1. Puppet
-1. Extending the DPK
+1. Extend the DPK
