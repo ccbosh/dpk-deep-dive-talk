@@ -1,4 +1,4 @@
-!SLIDE bullets
+!SLIDE center subsection blue
 
 # DPK Overview
 
@@ -6,15 +6,15 @@
 
 # DPK Background
 
-Deployment Packages are term that encompasses
+"Deployment Packages" is a term that encompasses:
 
-1. Python Bootstrap Scripts
-1. Software Archives
-  1. WebLogic/Tuxedo/Java/Oracle
-  1. PeopleTools
-  1. PeopleSoft Application
-1. Puppet
-1. Puppet Modules
+* Python Bootstrap Scripts
+* Software Archives
+  * WebLogic/Tuxedo/Java/Oracle
+  * PeopleTools
+  * PeopleSoft Application
+* Puppet
+* Puppet Modules
 
 ~~~SECTION:notes~~~
 Generally speaking, when we talk about the DPK, we often refer to the Puppet Modules and code. But the DPK really includes all 3 pieces.
@@ -24,12 +24,12 @@ Generally speaking, when we talk about the DPK, we often refer to the Puppet Mod
 
 # DPK Technologies
 
-1. Puppet
-1. Hiera
-1. Facter
-1. Python for bootstrapping 
+*  Puppet
+*  Hiera
+*  Facter
+*  Python for bootstrapping 
   * (Powershell/Bash for 8.55)
-1. Automated Configuration Management
+*  Automated Configuration Management
 
 ~~~SECTION:notes~~~
 In 8.56, the bootstrapping process was re-written in Python to make it cross platform.
@@ -39,10 +39,10 @@ In 8.56, the bootstrapping process was re-written in Python to make it cross pla
 
 # DPK Types
 
-1. PeopleTools DPK
-1. Application DPK*
-1. Elasticsearch DPK
-1. COBOL DPK
+* PeopleTools DPK
+* Application DPK*
+* Elasticsearch DPK
+* COBOL DPK
 
 ~~~SECTION:notes~~~
 There is no separate Application DPK download like the others. The PeopleSoft Images contain Application DPK, along with the PeopleTools DPK. To get an "Application DPK" (the `ps_app_home` tarball), you grab it from the PeopleSoft Image.
@@ -52,11 +52,11 @@ There is no separate Application DPK download like the others. The PeopleSoft Im
 
 # DPK Skillsets
 
-1. Basic PS Admin Knowledge
-1. Hiera, Facter, and YAML
-1. Puppet
-1. Scripting Experience
-1. Ruby
+* Basic PS Admin Knowledge
+* Hiera, Facter, and YAML
+* Puppet
+* Scripting Experience
+* Ruby
 
 ~~~SECTION:notes~~~
 The skills listed here are in order of importance. You HAVE to know basic PS Admin to do anything more than build PI's with the DPK. 
@@ -69,10 +69,10 @@ You won't need to know Ruby, but if you do you can really make the DPK work for 
 
 # DPK Considerations
 
-1. Built for the PeopleSoft Images
-1. Windows DPK sometimes behind in features
-1. Not designed for maintenance*
-1. Requires `root` access (not in 8.57+)
+* Built for the PeopleSoft Images
+* Windows DPK sometimes behind in features
+* Not designed for maintenance*
+* Requires `root` access (not in 8.57+)
 
 ~~~SECTION:notes~~~
 The DPK was built to spin up new environments on new servers, and it's really good at that. That's what "the cloud" needs.
