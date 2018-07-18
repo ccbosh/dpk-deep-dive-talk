@@ -16,10 +16,10 @@
 
 The DPK follows the "Roles and Profiles" paradigm for writing Puppet code.
 
-1. Role == Server Function
-1. Roles combine Profiles
-1. Profiles == Technology
-1. Profiles read configuration data
+* Role == Server Function
+* Roles combine Profiles
+* Profiles == Technology
+* Profiles read configuration data
 
 ~~~SECTION:notes~~~
 For more on the Roles and Profiles paradigm, read this blog post: https://www.craigdunn.org/2012/05/239/
@@ -31,11 +31,11 @@ For more on the Roles and Profiles paradigm, read this blog post: https://www.cr
 
 A DPK Role defines the components/configuration to build. There are roles for:
 
-1. PeopleTools App, Web, Batch, AppBatch
-1. Application App, Web, Batch, AppBatch
-1. PeopleSoft Image Demo or PUM
+* PeopleTools App, Web, Batch, AppBatch
+* Application App, Web, Batch, AppBatch
+* PeopleSoft Image Demo or PUM
 
-To view a full list of roles, look under `c:\psft\dpk\puppet\production\modules\pt_role\manifests`.
+To view a full list of roles, look under `c:\psft\dpk\puppet\production\modules\pt_role\manifests`
 
 !SLIDE bullets
 
@@ -65,8 +65,7 @@ We will revisit DPK roles later when we start customizing the DPK for our needs.
 
 1. The DPK role is defined in `dpk\puppet\production\manifests\site.pp`
 1. There is one `site.pp` file per server*
-1. When fully automated `site.pp` will call all the code to completely configure your server
-
+1. `site.pp` will call the code to configure your server
 
 ~~~SECTION:notes~~~
 1. The rule for `site.pp` is not a hard rule. The Puppet Roles/Profiles paradigm that the DPK follows says that a server should only have one role.
@@ -144,5 +143,7 @@ The `-e` command is very useful to test parts of the DPK. I wish I would have kn
 
 ~~~SECTION:notes~~~
 Demo: Look at the DPK Roles and Profiles
+Create a 2nd app server
 Run `puppet apply -e "include ::pt_profile::pt_appserver"`
+Run `puppet apply -e "include ::pt_profile::pt_domain_boot"`
 ~~~ENDSECTION~~~
