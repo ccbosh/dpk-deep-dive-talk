@@ -6,9 +6,9 @@
 
 # Build Your Environment
 
-1. DPK is good at building demo environments
-1. DPK uses Puppet, you can too!
-1. Write DPK code to build your system
+* DPK is good at building demo environments
+* DPK uses Puppet, you can too!
+* Write DPK code to build your system
 
 ~~~SECTION:notes~~~
 This is the best part of the DPK! It's a great tool out of the box, but we can make it do more. We can make the DPK build exactly the server we want, every time. No need to manually update files or forget to change configuration. Let Puppet do that for you.
@@ -29,9 +29,9 @@ This is the best part of the DPK! It's a great tool out of the box, but we can m
 
 # Learning Puppet
 
-1. Puppet thinks in state, not procedures
-1. Puppet uses types to represent state
-1. Delivered Puppet types and DPK types
+* Puppet thinks in state, not procedures
+* Puppet uses types to represent state
+* Delivered Puppet types and DPK types
   1. `file{}`
   1. `file_line{}`
   1. `pt_webserver_domain{}`
